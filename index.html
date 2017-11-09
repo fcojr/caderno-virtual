@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+	<script src="js/jquery.js" type="text/javascript"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+<body>
+	<nav id="nav">
+		<figure>
+			<img src="img/aluno.jpg">
+		</figure>
+			<h4>Francisco Macedo Jr</h4>
+		<h3>Menu</h3>
+		<ul id="menu">
+			<li><a href="#">Home</a></li>
+			<li class="dropdown closed"><a href="#">Unidades Curriculares</a>
+				<ul class="sub-menu">
+					<li><a href="#">E.B.D.</a></li>
+					<li><a href="#">E.B.D.</a></li>
+					<li><a href="#">Core</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Professores</a></li>
+			<li><a href="#">Grupo</a></li>
+		</ul>
+	</nav>
+	<script>
+		$(".dropdown").on("click", function(){
+			$(".sub-menu").slideToggle(500);
+			$(".dropdown").toggleClass("active");
+			$(".dropdown").toggleClass("closed");
+			if($(".dropdown").hasClass("active")){
+				//code
+			}
+		})
+	</script>
+</body>
+</html>
