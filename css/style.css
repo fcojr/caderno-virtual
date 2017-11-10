@@ -102,6 +102,12 @@ figure h4{
   border-top: 6px solid #fff;
   transition: .2s;
 }
+.active{
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 39px;
+}
 .dropdown.active:before{
 
 	content: "";
@@ -176,10 +182,11 @@ figure h4{
 .interna p{
 	text-align: justify;
 }
-.professor a{
+.professor div{
 	background-color: #f58220;
 	padding: 10px;
 	margin-top: auto;
+	position: relative;
 }
 .interna .professores {
 	display: flex;
