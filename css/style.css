@@ -26,6 +26,8 @@ ul{
 }
 /* Menu - nav */
 #nav{
+	position: fixed;
+	top: 0;
 	color: #fff;
 	display: flex;
 	flex-direction: column;
@@ -39,8 +41,8 @@ ul{
 figure{
 	text-align: center;
 }
-figure img{
-	border-radius: 50%;
+figure img
+{	border-radius: 50%;
 	width: 60px;
 }
 figure h4{
@@ -134,7 +136,13 @@ figure h4{
 }
 
 /**--Professor**/
-
+#header{
+	padding-left: 250px;
+}
+#main.interna,
+#main{
+	padding-left: 250px;
+}
 #main.interna{
 	height: 100%;
 }
