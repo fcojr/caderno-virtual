@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head>
+	<title>Caderno Virtual FAM</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="js/jquery.js" type="text/javascript"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+<body>
+	<nav id="nav">
+		<div class="nav-content">
+			<figure>
+				<img src="img/aluno.jpg">
+				<h4>Francisco Macedo Jr</h4>
+			</figure>
+			<ul id="menu">
+				<h3>Menu</h3>
+				<a href="index.html"><li>Home</li></a>
+				<li class="dropdown closed">Unidades Curriculares
+					<ul class="sub-menu">
+						<a href="#"><li>E.B.D.</li></a>
+						<a href="#"><li>R.S.O.</li></a>
+						<a href="#"><li>Core</li></a>
+					</ul>
+				</li>
+				<a href="#"><li>Professores</li></a>
+				<a href="#"><li>Grupo</li></a>
+			</ul>
+		</div>
+	</nav>
+	<script>
+		$(document).ready(function(){
+			$(".dropdown").on("click", function(){
+				$(".sub-menu").slideToggle(500);
+				$(".dropdown").toggleClass("active closed");
+			})
+		})
+	</script>
+	<header id="header">
+		<h1>Professores</h1>
+	</header>
+	<main class="interna container" id="main">
+		<div class="professores ;">
+		<div class="professor">
+			<figure>
+				<img src="img/professor.jpg">
+				<h3>Paulo Marconi</h3>
+			</figure>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus nec lectus mi. Fusce imperdiet euismod fringilla. Morbi vehicula massa non convallis maximus. Donec porta ac ligula vel tempor.</p>
+			<a href="#">Ver mais</a>
+		</div><div class="professor">
+			<figure>
+				<img src="img/professor.jpg">
+				<h3>Paulo Marconi</h3>
+			</figure>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus nec lectus mi. Fusce imperdiet euismod fringilla. Morbi vehicula massa non convallis maximus. Donec porta ac ligula vel tempor.</p>
+			<a href="#">Ver mais</a>
+		</div><div class="professor">
+			<figure>
+				<img src="img/professor.jpg">
+				<h3>Paulo Marconi</h3>
+			</figure>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus nec lectus mi. Fusce imperdiet euismod fringilla. Morbi vehicula massa non convallis maximus. Donec porta ac ligula vel tempor.</p>
+			<a href="#">Ver mais</a>
+		</div><div class="professor">
+			<figure>
+				<img src="img/professor.jpg">
+				<h3>Paulo Marconi</h3>
+			</figure>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus nec lectus mi. Fusce imperdiet euismod fringilla. Morbi vehicula massa non convallis maximus. Donec porta ac ligula vel tempor.</p>
+			<a href="#">Ver mais</a>
+		</div><div class="professor">
+			<figure>
+				<img src="img/professor.jpg">
+				<h3>Paulo Marconi</h3>
+			</figure>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus nec lectus mi. Fusce imperdiet euismod fringilla. Morbi vehicula massa non convallis maximus. Donec porta ac ligula vel tempor.</p>
+			<a href="#">Ver mais</a>
+		</div>
+	</div>
+	</main>	
+</body>
+</html>

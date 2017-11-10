@@ -12,41 +12,66 @@ html, body{
 a{
 	text-decoration: none;
 	color: #fff;
+	transition: .5s;
+	width: 100%;
 }
 ul{
 	list-style: none;
 }
-
+.container{
+	margin: 0 auto;
+    padding: 0 2em;
+    max-width: 1000px;
+    margin-bottom: 50px;
+}
 /* Menu - nav */
 #nav{
 	color: #fff;
 	display: flex;
 	flex-direction: column;
 	float: left;
-	width: 300px;
+	width: 250px;
 	background-color: #f58220;
 	height: 100%;
 	align-items: center;
 	box-shadow: 4px 0 5px -2px #888;
 }
+figure{
+	text-align: center;
+}
+figure img{
+	border-radius: 50%;
+	width: 60px;
+}
+figure h4{
+	font-size: 13px;
+}
 .sub-menu{
 	display: none;
-	background-color: #7b7a7a;
+	background-color: #fff;
 	position: relative;
 	top: 15px;
 	width: 100%;
 	z-index: 999;
 }
-figure img{
-	border-radius: 50%;
-	overflow: hidden;
-	width: 80px;
+.sub-menu li{
+	color: #f58220;
 }
-#nav h3{
-	margin: 100px;
+.sub-menu li:hover{
+	color: #fff;
+}
+
+.nav-content{
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 500px;
+    width: 100%;
 }
 #menu{
 	width: 100%;
+	text-align: center;
+	margin-top: 50px;
 }
 #menu li{
 	position: relative;
@@ -54,6 +79,10 @@ figure img{
 	text-align: center;
 	cursor: pointer;
 	transition: .5s;
+	width: 100%;
+}
+#menu h3{
+	padding: 15px 0;
 }
 #menu li:hover{
 	background-color: #FF5A00;
@@ -84,4 +113,68 @@ figure img{
   
   border-bottom: 6px solid #fff;
     transition: .2s;
+}
+/* Home - Header */
+#header{
+	color: #f58220;
+	display: flex;
+	justify-content: space-around;
+	height: 150px;
+	align-items: center;
+	flex-direction: column;
+}
+/* Home - Main */
+#main{
+	color: #000;
+	height: 150px;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+/**--Professor**/
+
+#main.interna{
+	height: 100%;
+}
+.professor{
+	display: flex;
+	flex-direction: column;
+	height: 400px;
+	width: 25%;
+	box-shadow: 0 0 10px #000;
+	padding: 10px;
+	justify-content: space-between;
+	margin: 6.25%;
+	margin-top: 0;
+}
+.professor:nth-child(3n + 0){
+	margin-right: 0;
+}
+.professor:nth-child(3n+1){
+	margin-left: 0;
+}
+.interna figure img{
+	width: 120px;
+}
+.professor figure{
+	padding-bottom: 10px;
+	padding-top: 0;
+	border-bottom: 1px solid #000;
+}
+.professor p{
+	padding-top: 10px;
+}
+.interna p{
+	text-align: justify;
+}
+.professor a{
+	background-color: #f58220;
+	padding: 10px;
+}
+.interna .professores {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
 }

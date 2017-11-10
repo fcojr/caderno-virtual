@@ -10,33 +10,48 @@
 </head>
 <body>
 	<nav id="nav">
-		<figure>
-			<img src="img/aluno.jpg">
-		</figure>
-			<h4>Francisco Macedo Jr</h4>
-		<h3>Menu</h3>
-		<ul id="menu">
-			<li><a href="#">Home</a></li>
-			<li class="dropdown closed"><a href="#">Unidades Curriculares</a>
-				<ul class="sub-menu">
-					<li><a href="#">E.B.D.</a></li>
-					<li><a href="#">E.B.D.</a></li>
-					<li><a href="#">Core</a></li>
-				</ul>
-			</li>
-			<li><a href="#">Professores</a></li>
-			<li><a href="#">Grupo</a></li>
-		</ul>
+		<div class="nav-content">
+			<figure>
+				<img src="img/aluno.jpg">
+				<h4>Francisco Macedo Jr</h4>
+			</figure>
+			<ul id="menu">
+				<h3>Menu</h3>
+				<a href="#"><li>Home</li></a>
+				<li class="dropdown closed">Unidades Curriculares
+					<ul class="sub-menu">
+						<a href="#"><li>E.B.D.</li></a>
+						<a href="#"><li>R.S.O.</li></a>
+						<a href="#"><li>Core</li></a>
+					</ul>
+				</li>
+				<a href="professor.html"><li>Professores</li></a>
+				<a href="#"><li>Grupo</li></a>
+			</ul>
+		</div>
 	</nav>
 	<script>
-		$(".dropdown").on("click", function(){
-			$(".sub-menu").slideToggle(500);
-			$(".dropdown").toggleClass("active");
-			$(".dropdown").toggleClass("closed");
-			if($(".dropdown").hasClass("active")){
-				//code
-			}
+		$(document).ready(function(){
+			$(".dropdown").on("click", function(){
+				$(".sub-menu").slideToggle(500);
+				$(".dropdown").toggleClass("active closed");
+			})
 		})
 	</script>
+	<header id="header">
+		<h1>Caderno Virtual</h1>
+	</header>
+	<main id="main">
+		<h2>Bem vindo ao nosso caderno virtual!</h2>
+		<p>Aqui você encontra informações sobre os professores, fotos da lousa, matérias, materiais de estudo e muito mais!</p>
+		<p>Use o menu ao lado para começar!</p>
+	</main>	
 </body>
 </html>
+
+
+
+		<!-- <div class="texto">
+			<p>Bem vindo ao nosso Caderno virtual!</p>
+			<p>Aqui você encontra informações sobre os professores, fotos da lousa, matérias, materiais de estudo e muito mais!</p>
+		</div> -->
