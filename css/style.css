@@ -141,11 +141,10 @@ figure h4{
 .professor{
 	display: flex;
 	flex-direction: column;
-	height: 400px;
+	min-height: 400px;
 	width: 25%;
 	box-shadow: 0 0 10px #000;
 	padding: 10px;
-	justify-content: space-between;
 	margin: 6.25%;
 	margin-top: 0;
 }
@@ -172,6 +171,7 @@ figure h4{
 .professor a{
 	background-color: #f58220;
 	padding: 10px;
+	margin-top: auto;
 }
 .interna .professores {
 	display: flex;
