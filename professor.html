@@ -32,9 +32,9 @@
 	</nav>
 	<script>
 		$(document).ready(function(){
-			$("#nav .dropdown").hover(function(){
-				$("#nav .sub-menu").slideToggle(500);
-				$("#nav .dropdown").toggleClass("active closed");
+			$(".dropdown").on("click", function(){
+				$(".sub-menu").slideToggle(500);
+				$(".dropdown").toggleClass("active closed");
 			})
 		})
 	</script>
@@ -49,22 +49,7 @@
 					<h3>Paulo Marconi</h3>
 				</figure>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus nec lectus mi. Fusce imperdiet euismod fringilla. Morbi vehicula massa non convallis maximus. Donec porta ac ligula vel tempor.</p>
-				
-				<div class="btn closed">Ver mais
-					<ul class="sub-menu">
-						<a href="#"><li>E.B.D.</li></a>
-						<a href="#"><li>R.S.O.</li></a>
-						<a href="#"><li>Core</li></a>
-					</ul>
-				</div>
-				<script>
-					$(document).ready(function(){
-						$(".btn").on("click", function(){
-							$(".btn .sub-menu").toggleClass("active");
-						})
-
-					})
-				</script>
+				<a href="#">Ver mais</a>
 			</div>
 			<div class="professor">
 				<figure>
