@@ -24,7 +24,12 @@ ul {
   max-width: 1000px;
   margin-bottom: 50px; }
 
-/* Menu - nav */
+#sanfona h3, #sanfona .ui-accordion-content {
+  border-radius: 5px; }
+
+#nav figure img, .professor figure img {
+  border-radius: 50%; }
+
 #nav {
   position: fixed;
   top: 0;
@@ -40,7 +45,6 @@ ul {
   #nav figure {
     text-align: center; }
     #nav figure img {
-      border-radius: 50%;
       width: 60px; }
     #nav figure h4 {
       font-size: 13px; }
@@ -103,7 +107,6 @@ ul {
     position: absolute;
     left: 0; }
 
-/* Home - Header */
 #header {
   color: #f58220;
   display: flex;
@@ -113,7 +116,6 @@ ul {
   flex-direction: column;
   padding-left: 250px; }
 
-/* Home - Main */
 #main {
   color: #000;
   height: 150px;
@@ -123,7 +125,6 @@ ul {
   justify-content: space-between;
   padding-left: 250px; }
 
-/**--Professor**/
 #main.interna {
   height: 100%; }
 
@@ -159,14 +160,31 @@ ul {
     padding-top: 0;
     border-bottom: 1px solid #000; }
     .professor figure img {
-      width: 120px;
-      border-radius: 50%; }
+      width: 120px; }
 
-/*Conteudos*/
 .conteudo {
   text-align: left;
   margin: 25px 0; }
   .conteudo h2 {
     margin: 5px 0; }
+
+#sanfona {
+  width: 50%;
+  text-align: left; }
+  #sanfona h3 {
+    padding: 8px;
+    background-color: #f58220;
+    width: 100%;
+    margin: 1px 0;
+    color: #fff;
+    font-weight: normal;
+    cursor: pointer;
+    outline: none; }
+  #sanfona .ui-accordion-content {
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    margin-bottom: 5px; }
+    #sanfona .ui-accordion-content p {
+      padding: 10px; }
 
 /*# sourceMappingURL=style.css.map */

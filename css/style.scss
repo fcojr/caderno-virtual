@@ -24,9 +24,13 @@ ul{
     max-width: 1000px;
     margin-bottom: 50px;
 }
+//variaveis
 $cor-padrao: #f58220;
 $cor-secundaria: darken($cor-padrao, 10%);
-/* Menu - nav */
+//placeholder
+%canto-borda{border-radius: 5px;}
+%redondo{border-radius: 50%;}
+//Menu - nav
 #nav{
 	position: fixed;
 	top: 0;
@@ -42,7 +46,7 @@ $cor-secundaria: darken($cor-padrao, 10%);
 	figure{
 		text-align: center;
 		img{
-			border-radius: 50%;
+			@extend %redondo;
 			width: 60px;
 		}
 		h4{
@@ -119,7 +123,7 @@ $cor-secundaria: darken($cor-padrao, 10%);
 		left: 0;
 	}
 }
-/* Home - Header */
+//Home - Header
 #header{
 	color: $cor-padrao;
 	display: flex;
@@ -129,7 +133,7 @@ $cor-secundaria: darken($cor-padrao, 10%);
 	flex-direction: column;
 	padding-left: 250px;
 }
-/* Home - Main */
+//Home - Main
 #main{
 	color: #000;
 	height: 150px;
@@ -140,7 +144,7 @@ $cor-secundaria: darken($cor-padrao, 10%);
 	padding-left: 250px;
 }
 
-/**--Professor**/
+//Professor
 #main.interna{
 	height: 100%;
 }
@@ -181,16 +185,41 @@ $cor-secundaria: darken($cor-padrao, 10%);
 		border-bottom: 1px solid #000;
 		img{
 			width: 120px;
-			border-radius: 50%;
+			@extend %redondo;
 		}
 	}
 }
 
-/*Conteudos*/
+//Conteudo
 .conteudo{
 	text-align: left;
 	margin: 25px 0;
 	h2{
 		margin: 5px 0;
+	}
+}
+//Grupo sanfona
+#sanfona{
+	width: 50%;
+	text-align: left;
+	h3{
+		padding: 8px;
+		background-color: $cor-padrao;
+		width: 100%;
+		@extend %canto-borda;
+		margin: 1px 0;
+		color: #fff;
+		font-weight: normal;
+		cursor: pointer;
+		outline: none;
+	}
+	.ui-accordion-content{
+		background-color: #f4f4f4;
+		border: 1px solid #ddd;
+		margin-bottom: 5px;
+		@extend %canto-borda;
+		p{
+			padding: 10px;
+		}
 	}
 }

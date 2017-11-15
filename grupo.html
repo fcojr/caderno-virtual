@@ -7,6 +7,15 @@
 	<script src="js/jquery.js" type="text/javascript"></script>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script>
+	$(document).ready(function(){
+	    $("#sanfona").accordion({
+	    	collapsible: true,
+	    	active: false
+	    });
+	  })
+	</script>
 </head>
 <body>
 	<nav id="nav">
@@ -25,8 +34,8 @@
 						<a href="#"><li>Core: Raciocinio Logico e Matematico</li></a>
 					</ul>
 				</li>
-				<a href="#"><li>Professores</li></a>
-				<a href="grupo.html"><li>Grupo</li></a>
+				<a href="professor.html"><li>Professores</li></a>
+				<a href="#"><li>Grupo</li></a>
 				<a href="#"><li>Relatorio</li></a>
 			</ul>
 		</div>
@@ -40,49 +49,25 @@
 		})
 	</script>
 	<header id="header">
-		<h1>Professores</h1>
+		<h1>Grupo</h1>
 	</header>
-	<main class="interna" id="main">
-		<div class="professores container">
-			<div class="professor">
-				<figure>
-					<img src="img/professor.jpg">
-					<h3>Paulo Marconi</h3>
-				</figure>
+	<main id="main">
+		<div class="container" id="sanfona">
+			<h3>Francisco Junior</h3>
+			<div>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus nec lectus mi. Fusce imperdiet euismod fringilla. Morbi vehicula massa non convallis maximus. Donec porta ac ligula vel tempor.</p>
-				<a href="#">Ver mais</a>
 			</div>
-			<div class="professor">
-				<figure>
-					<img src="img/professor.jpg">
-					<h3>Paulo Marconi</h3>
-				</figure>
+			<h3>Charlles Limamota</h3>
+			<div>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus nec lectus mi. Fusce imperdiet euismod fringilla. Morbi vehicula massa non convallis maximus. Donec porta ac ligula vel tempor.</p>
-				<a href="#">Ver mais</a>
 			</div>
-			<div class="professor">
-				<figure>
-					<img src="img/professor.jpg">
-					<h3>Paulo Marconi</h3>
-				</figure>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus nec lectus mi. Fusce imperdiet euismod fringilla. Morbi vehicula massa non convallis maximus. Donec porta ac ligula vel tempor.</p>
-				<a href="#">Ver mais</a>
+			<h3>Luiz Antonio</h3>
+			<div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus nec lectus mi. Fusce imperdiet euismod fringilla. Morbi vehicula massa non convallis maximus. Donec porta ac ligula vel tempor.ligula vel tempor.ligula vel temporadipiscing elit. Vivamus nec lectus mi. Fusce imperdiet euismod fringilla. Morbi vehicula massa non convallis maximus. Donec porta ac ligula vel tempor.ligula vel tempor.ligula vel temporadipiscing elit. Vivamus nec lectus mi. Fusce imperdiet euismod fringilla. Morbi vehicula massa non convallis maximus. Donec porta ac ligula vel tempor.ligula vel tempor.ligula vel tempor.</p>
 			</div>
-			<div class="professor">
-				<figure>
-					<img src="img/professor.jpg">
-					<h3>Paulo Marconi</h3>
-				</figure>
+			<h3>Denis Trugilo</h3>
+			<div>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus nec lectus mi. Fusce imperdiet euismod fringilla. Morbi vehicula massa non convallis maximus. Donec porta ac ligula vel tempor.</p>
-				<a href="#">Ver mais</a>
-			</div>
-			<div class="professor">
-				<figure>
-					<img src="img/professor.jpg">
-					<h3>Paulo Marconi</h3>
-				</figure>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus nec lectus mi. Fusce imperdiet euismod fringilla. Morbi vehicula massa non convallis maximus. Donec porta ac ligula vel tempor.</p>
-				<a href="#">Ver mais</a>
 			</div>
 		</div>
 	</main>	
