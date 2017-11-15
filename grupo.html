@@ -53,7 +53,7 @@
 	</header>
 	<main id="main">
 		<div class="container" id="sanfona">
-			<h3>Francisco Junior</h3>
+			<h3 class="closed">Francisco Junior</h3>
 			<div>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus nec lectus mi. Fusce imperdiet euismod fringilla. Morbi vehicula massa non convallis maximus. Donec porta ac ligula vel tempor.</p>
 			</div>
@@ -69,6 +69,13 @@
 			<div>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus nec lectus mi. Fusce imperdiet euismod fringilla. Morbi vehicula massa non convallis maximus. Donec porta ac ligula vel tempor.</p>
 			</div>
+			<script>
+				$(document).ready(function(){
+					$("#sanfona h3").on("click", function(){
+						$("#sanfona h3").toggleClass("active closed");
+					})
+				})
+			</script>
 		</div>
 	</main>	
 </body>

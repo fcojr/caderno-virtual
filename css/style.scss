@@ -30,6 +30,17 @@ $cor-secundaria: darken($cor-padrao, 10%);
 //placeholder
 %canto-borda{border-radius: 5px;}
 %redondo{border-radius: 50%;}
+%triangulo{
+	content: "";
+	position: absolute;
+	right: 20px;
+	top: 21.5px;
+	width: 0; 
+	height: 0; 
+	transition: .2s;
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+}
 //Menu - nav
 #nav{
 	position: fixed;
@@ -93,29 +104,15 @@ $cor-secundaria: darken($cor-padrao, 10%);
 	    	}
 	    }
 	}
-	.dropdown.closed:before{
-		content: "";
-		position: absolute;
-		right: 20px;
-		top: 21.5px;
-		width: 0; 
-		height: 0; 
-		border-left: 6px solid transparent;
-		border-right: 6px solid transparent;
-		border-top: 6px solid #fff;
-		transition: .2s;
-	}
-	.dropdown.active:before{
-		content: "";
-		position: absolute;
-		right: 20px;
-		top: 21.5px;
-		width: 0; 
-		height: 0; 
-		border-left: 6px solid transparent;
-		border-right: 6px solid transparent;
-		border-bottom: 6px solid #fff;
-	    transition: .2s;
+	.dropdown{
+		&.closed:before{
+			@extend %triangulo;
+			border-top: 6px solid #fff;
+		}
+		&.active:before{
+			@extend %triangulo;
+			border-bottom: 6px solid #fff;
+		}
 	}
 	.active{
 		display: block;
