@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+	<title>Caderno Virtual FAM</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="js/jquery.js" type="text/javascript"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+<body>
+	<nav id="nav">
+		<div class="nav-content">
+			<figure>
+				<img src="img/aluno.jpg">
+				<h4>Francisco Macedo Jr</h4>
+			</figure>
+			<ul id="menu">
+				<h3>Menu</h3>
+				<a href="index.html"><li>Home</li></a>
+				<li class="dropdown closed">Unidades Curriculares
+					<ul class="sub-menu">
+						<a href="#"><li>Estrutura e Banco de Dados</li></a>
+						<a href="#"><li>Redes e Sistemas Operacionais</li></a>
+						<a href="#"><li>Core: Raciocinio Logico e Matematico</li></a>
+					</ul>
+				</li>
+				<a href="professores.html"><li>Professores</li></a>
+				<a href="#"><li>Grupo</li></a>
+				<a href="#"><li>Relatorio</li></a>
+			</ul>
+		</div>
+	</nav>
+	<script>
+		$(document).ready(function(){
+			$(".dropdown").on("click", function(){
+				$(".sub-menu").slideToggle(500);
+				$(".dropdown").toggleClass("active closed");
+			})
+		})
+	</script>
+	<header id="header">
+		<h1>Estrutura e Banco de dados</h1>
+	</header>
+	<main class="interna" id="main">
+		<div class="container">
+			<div class="conteudo">
+				<h2>Titulo do conteudo</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non sapien dictum, maximus nisi non, faucibus urna. Integer maximus velit sit amet turpis porta, a vulputate mi malesuada. Sed a condimentum arcu. Nam eget sodales neque. Sed vel volutpat enim, luctus euismod tellus. Donec enim dolor, varius id pharetra vehicula, rhoncus viverra nisl. Curabitur sollicitudin venenatis orci et fringilla. Vestibulum non aliquet ante. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam viverra elementum erat id tempor. Sed consectetur aliquet nunc, sit amet laoreet risus auctor quis.</p>
+				<p>Nam eu orci id arcu feugiat ultrices sit amet sit amet mi. Sed fermentum quam nibh, nec vulputate odio rutrum non. Mauris quis leo a metus porttitor gravida. Integer imperdiet dictum auctor. Pellentesque vel purus lobortis, tristique urna nec, facilisis ex. Pellentesque laoreet elit id lorem scelerisque hendrerit. In hac habitasse platea dictumst. Suspendisse vel felis tincidunt, hendrerit sem vitae, venenatis nunc. Nullam finibus viverra commodo. Mauris vitae imperdiet massa. Phasellus erat dolor, vehicula vitae quam ut, eleifend pellentesque lectus. Etiam fermentum in erat vitae fringilla. Quisque eget magna eget metus pulvinar sollicitudin in nec risus.</p>
+			</div>
+			<div class="conteudo">
+				<h2>Titulo do conteudo</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non sapien dictum, maximus nisi non, faucibus urna. Integer maximus velit sit amet turpis porta, a vulputate mi malesuada. Sed a condimentum arcu. Nam eget sodales neque. Sed vel volutpat enim, luctus euismod tellus. Donec enim dolor, varius id pharetra vehicula, rhoncus viverra nisl. Curabitur sollicitudin venenatis orci et fringilla. Vestibulum non aliquet ante. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam viverra elementum erat id tempor. Sed consectetur aliquet nunc, sit amet laoreet risus auctor quis.</p>
+				<p>Nam eu orci id arcu feugiat ultrices sit amet sit amet mi. Sed fermentum quam nibh, nec vulputate odio rutrum non. Mauris quis leo a metus porttitor gravida. Integer imperdiet dictum auctor. Pellentesque vel purus lobortis, tristique urna nec, facilisis ex. Pellentesque laoreet elit id lorem scelerisque hendrerit. In hac habitasse platea dictumst. Suspendisse vel felis tincidunt, hendrerit sem vitae, venenatis nunc. Nullam finibus viverra commodo. Mauris vitae imperdiet massa. Phasellus erat dolor, vehicula vitae quam ut, eleifend pellentesque lectus. Etiam fermentum in erat vitae fringilla. Quisque eget magna eget metus pulvinar sollicitudin in nec risus.</p>
+			</div>
+			<div class="conteudo">
+				<h2>Titulo do conteudo</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non sapien dictum, maximus nisi non, faucibus urna. Integer maximus velit sit amet turpis porta, a vulputate mi malesuada. Sed a condimentum arcu. Nam eget sodales neque. Sed vel volutpat enim, luctus euismod tellus. Donec enim dolor, varius id pharetra vehicula, rhoncus viverra nisl. Curabitur sollicitudin venenatis orci et fringilla. Vestibulum non aliquet ante. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam viverra elementum erat id tempor. Sed consectetur aliquet nunc, sit amet laoreet risus auctor quis.</p>
+				<p>Nam eu orci id arcu feugiat ultrices sit amet sit amet mi. Sed fermentum quam nibh, nec vulputate odio rutrum non. Mauris quis leo a metus porttitor gravida. Integer imperdiet dictum auctor. Pellentesque vel purus lobortis, tristique urna nec, facilisis ex. Pellentesque laoreet elit id lorem scelerisque hendrerit. In hac habitasse platea dictumst. Suspendisse vel felis tincidunt, hendrerit sem vitae, venenatis nunc. Nullam finibus viverra commodo. Mauris vitae imperdiet massa. Phasellus erat dolor, vehicula vitae quam ut, eleifend pellentesque lectus. Etiam fermentum in erat vitae fringilla. Quisque eget magna eget metus pulvinar sollicitudin in nec risus.</p>
+			</div>
+			<div class="conteudo">
+				<h2>Titulo do conteudo</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non sapien dictum, maximus nisi non, faucibus urna. Integer maximus velit sit amet turpis porta, a vulputate mi malesuada. Sed a condimentum arcu. Nam eget sodales neque. Sed vel volutpat enim, luctus euismod tellus. Donec enim dolor, varius id pharetra vehicula, rhoncus viverra nisl. Curabitur sollicitudin venenatis orci et fringilla. Vestibulum non aliquet ante. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam viverra elementum erat id tempor. Sed consectetur aliquet nunc, sit amet laoreet risus auctor quis.</p>
+				<p>Nam eu orci id arcu feugiat ultrices sit amet sit amet mi. Sed fermentum quam nibh, nec vulputate odio rutrum non. Mauris quis leo a metus porttitor gravida. Integer imperdiet dictum auctor. Pellentesque vel purus lobortis, tristique urna nec, facilisis ex. Pellentesque laoreet elit id lorem scelerisque hendrerit. In hac habitasse platea dictumst. Suspendisse vel felis tincidunt, hendrerit sem vitae, venenatis nunc. Nullam finibus viverra commodo. Mauris vitae imperdiet massa. Phasellus erat dolor, vehicula vitae quam ut, eleifend pellentesque lectus. Etiam fermentum in erat vitae fringilla. Quisque eget magna eget metus pulvinar sollicitudin in nec risus.</p>
+			</div>
+		</div>
+	</main>	
+</body>
+</html>
