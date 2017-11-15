@@ -16,6 +16,7 @@
 	    });
 	  })
 	</script>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 </head>
 <body>
 	<nav id="nav">
@@ -51,9 +52,9 @@
 	<header id="header">
 		<h1>Grupo</h1>
 	</header>
-	<main id="main">
+	<main class="container" id="main">
 		<div class="container" id="sanfona">
-			<h3 class="closed">Francisco Junior</h3>
+			<h3>Francisco Junior</h3>
 			<div>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus nec lectus mi. Fusce imperdiet euismod fringilla. Morbi vehicula massa non convallis maximus. Donec porta ac ligula vel tempor.</p>
 			</div>
@@ -69,13 +70,6 @@
 			<div>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus nec lectus mi. Fusce imperdiet euismod fringilla. Morbi vehicula massa non convallis maximus. Donec porta ac ligula vel tempor.</p>
 			</div>
-			<script>
-				$(document).ready(function(){
-					$("#sanfona h3").on("click", function(){
-						$("#sanfona h3").toggleClass("active closed");
-					})
-				})
-			</script>
 		</div>
 	</main>	
 </body>

@@ -197,12 +197,10 @@ $cor-secundaria: darken($cor-padrao, 10%);
 }
 //Grupo sanfona
 #sanfona{
-	width: 50%;
 	text-align: left;
 	h3{
 		padding: 8px;
 		background-color: $cor-padrao;
-		width: 100%;
 		@extend %canto-borda;
 		margin: 1px 0;
 		color: #fff;
