@@ -6,4 +6,13 @@
 	align-items: center;
 	flex-direction: column;
 	padding-left: 250px;
+	i{
+		color: $cor-padrao;
+		position: absolute;
+		left: 50px;
+		font-size: 30px;
+	}
+	@media(max-width: $break-medio){
+		padding-left: 0;
+	}
 }

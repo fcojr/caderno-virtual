@@ -94,6 +94,9 @@ ul {
     display: block;
     position: absolute;
     left: 0; }
+  @media (max-width: 900px) {
+    #nav {
+      margin-left: -255px; } }
 
 #header {
   color: #f58220;
@@ -103,6 +106,14 @@ ul {
   align-items: center;
   flex-direction: column;
   padding-left: 250px; }
+  #header i {
+    color: #f58220;
+    position: absolute;
+    left: 50px;
+    font-size: 30px; }
+  @media (max-width: 900px) {
+    #header {
+      padding-left: 0; } }
 
 #main {
   color: #000;
@@ -112,6 +123,9 @@ ul {
   flex-direction: column;
   justify-content: space-between;
   padding-left: 250px; }
+  @media (max-width: 900px) {
+    #main {
+      padding-left: 0; } }
 
 #main.interna {
   height: 100%; }

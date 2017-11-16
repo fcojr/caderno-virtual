@@ -75,4 +75,7 @@
 		position: absolute;
 		left: 0;
 	}
+	@media (max-width: $break-medio){
+		margin-left: -255px;
+	}
 }
