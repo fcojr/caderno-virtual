@@ -24,12 +24,6 @@ ul {
   max-width: 1000px;
   margin-bottom: 50px; }
 
-#sanfona h3, #sanfona .ui-accordion-content {
-  border-radius: 5px; }
-
-#nav figure img, .professor figure img {
-  border-radius: 50%; }
-
 #nav .dropdown.closed:before, #nav .dropdown.active:before {
   content: "";
   position: absolute;
@@ -56,6 +50,7 @@ ul {
   #nav figure {
     text-align: center; }
     #nav figure img {
+      border-radius: 50%;
       width: 60px; }
     #nav figure h4 {
       font-size: 13px; }
@@ -153,7 +148,8 @@ ul {
     padding-top: 0;
     border-bottom: 1px solid #000; }
     .professor figure img {
-      width: 120px; }
+      width: 120px;
+      border-radius: 50%; }
 
 .conteudo {
   text-align: left;
@@ -166,6 +162,7 @@ ul {
   #sanfona h3 {
     padding: 8px;
     background-color: #f58220;
+    border-radius: 5px;
     margin: 1px 0;
     color: #fff;
     font-weight: normal;
@@ -174,8 +171,7 @@ ul {
   #sanfona .ui-accordion-content {
     background-color: #f4f4f4;
     border: 1px solid #ddd;
-    margin-bottom: 5px; }
+    margin-bottom: 5px;
+    border-radius: 5px; }
     #sanfona .ui-accordion-content p {
       padding: 10px; }
-
-/*# sourceMappingURL=style.css.map */

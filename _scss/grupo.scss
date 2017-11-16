@@ -1,0 +1,22 @@
+#sanfona{
+	text-align: left;
+	h3{
+		padding: 8px;
+		background-color: $cor-padrao;
+		@include arredonda(5px);
+		margin: 1px 0;
+		color: #fff;
+		font-weight: normal;
+		cursor: pointer;
+		outline: none;
+	}
+	.ui-accordion-content{
+		background-color: #f4f4f4;
+		border: 1px solid #ddd;
+		margin-bottom: 5px;
+		@include arredonda(5px);
+		p{
+			padding: 10px;
+		}
+	}
+}

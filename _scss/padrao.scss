@@ -1,0 +1,26 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+html, body{
+	height: 100%;
+	font-family: Roboto, sans-serif;
+}
+a{
+	text-decoration: none;
+	color: #fff;
+	transition: .5s;
+	width: 100%;
+}
+ul{
+	list-style: none;
+}
+.container{
+	margin: 0 auto;
+    padding: 0 2em;
+    max-width: 1000px;
+    margin-bottom: 50px;
+}

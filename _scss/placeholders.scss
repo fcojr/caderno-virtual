@@ -1,0 +1,11 @@
+%triangulo{
+	content: "";
+	position: absolute;
+	right: 20px;
+	top: 21.5px;
+	width: 0; 
+	height: 0; 
+	transition: .2s;
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+}
