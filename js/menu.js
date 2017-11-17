@@ -4,10 +4,12 @@ $(document).ready(function(){
 		$('#nav').toggleClass("menu-ativo");
 		if($('#nav').hasClass("menu-ativo")){
 			$(".nav-back").show();
+			$("body").addClass("overflow");
 		}
 		$(".nav-back").on("click", function(){
 			$('#nav').removeClass("menu-ativo");
-			$(".nav-back").hide();
+			$(this).hide();
+			$("body").removeClass("overflow");
 		})
 	})
 })

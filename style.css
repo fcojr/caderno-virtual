@@ -2431,7 +2431,8 @@ ul {
   height: 100%;
   position: absolute;
   background-color: rgba(0, 0, 0, 0.6);
-  transition: .5s; }
+  transition: .5s;
+  z-index: 1; }
 
 #header {
   color: #f58220;
@@ -2465,6 +2466,9 @@ ul {
     #layout {
       padding-left: 0; } }
 
+.overflow {
+  overflow: hidden; }
+
 #main.interna {
   height: 100%; }
 
@@ -2481,12 +2485,8 @@ ul {
   width: 230px;
   box-shadow: 0 0 10px #000;
   padding: 10px;
-  margin: 1.3%;
+  margin: 13px;
   margin-top: 0; }
-  .professor:nth-child(4n + 0) {
-    margin-right: 0; }
-  .professor:nth-child(4n+1) {
-    margin-left: 0; }
   .professor p {
     padding-top: 10px;
     text-align: justify; }
@@ -2504,8 +2504,10 @@ ul {
       border-radius: 50%; }
   @media (max-width: 900px) {
     .professor {
-      margin: 0;
       margin-top: 20px; } }
+  @media (max-width: 575px) {
+    .professor {
+      width: 100%; } }
 
 .conteudo {
   text-align: left;
