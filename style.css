@@ -2427,6 +2427,13 @@ ul {
   #nav.menu-ativo {
     margin-left: 0 !important; }
 
+.nav-back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #000000ab;
+  transition: .5s; }
+
 #header {
   color: #f58220;
   display: flex;
