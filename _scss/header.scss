@@ -11,6 +11,7 @@
 	i{
 		color: $cor-padrao;
 		font-size: 30px;
+		padding:8px;
 		@media(min-width: $break-medio){
 			display: none;
 		}

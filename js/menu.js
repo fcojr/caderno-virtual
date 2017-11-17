@@ -12,4 +12,9 @@ $(document).ready(function(){
 			$("body").removeClass("overflow");
 		})
 	})
-})
+});
+$(function(){
+	$(".icon").on("click", function(){
+		$(this).toggleClass("ativo");
+	});
+});
