@@ -10,6 +10,8 @@
 	height: 100%;
 	align-items: center;
 	box-shadow: 4px 0 5px -2px #888;
+	z-index: 1;
+	transition: .5s;
 	figure{
 		text-align: center;
 		img{
@@ -81,5 +83,4 @@
 	&.menu-ativo{
 		margin-left: 0!important;
 	}
-	transition: .5s;
 }

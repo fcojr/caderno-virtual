@@ -13,5 +13,8 @@
 		color: $cor-padrao;
 		font-size: 30px;
 		float: right;
+		@media(min-width: $break-medio){
+			display: none;
+		}
 	}
 }

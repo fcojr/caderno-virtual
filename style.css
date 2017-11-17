@@ -2372,6 +2372,7 @@ ul {
   height: 100%;
   align-items: center;
   box-shadow: 4px 0 5px -2px #888;
+  z-index: 1;
   transition: .5s; }
   #nav figure {
     text-align: center; }
@@ -2440,6 +2441,9 @@ ul {
     color: #f58220;
     font-size: 30px;
     float: right; }
+    @media (min-width: 900px) {
+      #header i {
+        display: none; } }
 
 #main {
   color: #000;
