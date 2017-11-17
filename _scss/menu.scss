@@ -78,4 +78,8 @@
 	@media (max-width: $break-medio){
 		margin-left: -255px;
 	}
+	&.menu-ativo{
+		margin-left: 0!important;
+	}
+	transition: .5s;
 }

@@ -5,6 +5,8 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+}
+#layout{
 	padding-left: 250px;
 	@media(max-width: $break-medio){
 		padding-left: 0;
