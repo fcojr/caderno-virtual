@@ -23,3 +23,13 @@ ul{
     padding: 0 2em;
     max-width: 1000px;
 }
+#layout{
+	padding-left: 250px;
+	@media(max-width: $break-medio){
+		padding-left: 0;
+	}
+}
+.overflow{
+	position: relative;
+	overflow: hidden;
+}

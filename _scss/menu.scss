@@ -64,12 +64,10 @@
 	}
 	.dropdown{
 		&.closed:before{
-			@extend %triangulo;
-			border-top: 6px solid #fff;
+			@include triangulo("baixo");
 		}
 		&.active:before{
-			@extend %triangulo;
-			border-bottom: 6px solid #fff;
+			@include triangulo("cima");
 		}
 	}
 	.active{

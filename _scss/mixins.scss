@@ -1,1 +1,18 @@
 @mixin arredonda($borda){border-radius: $borda;}
+@mixin triangulo($posicao){
+	content: "";
+	position: absolute;
+	right: 20px;
+	top: 21.5px;
+	width: 0; 
+	height: 0; 
+	transition: .2s;
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+	@if $posicao == "baixo"{
+		border-top: 6px solid #fff;
+	}
+	@else if $posicao == "cima"{
+		border-bottom: 6px solid #fff;
+	}
+}

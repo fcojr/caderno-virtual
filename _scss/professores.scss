@@ -35,10 +35,10 @@
 			@include arredonda(50%);
 		}
 	}
-	@media(max-width: $break-medio){
+	@media (max-width: $break-medio){
 		margin-top: 20px;
 	}
-	@media(max-width: 575px){
+	@media (max-width: $break-mobile){
 		width: 100%;
 	}
 }

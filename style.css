@@ -24,16 +24,15 @@ ul {
   padding: 0 2em;
   max-width: 1000px; }
 
-#nav .dropdown.closed:before, #nav .dropdown.active:before {
-  content: "";
-  position: absolute;
-  right: 20px;
-  top: 21.5px;
-  width: 0;
-  height: 0;
-  transition: .2s;
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent; }
+#layout {
+  padding-left: 250px; }
+  @media (max-width: 900px) {
+    #layout {
+      padding-left: 0; } }
+
+.overflow {
+  position: relative;
+  overflow: hidden; }
 
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
@@ -2413,8 +2412,26 @@ ul {
         #nav .nav-content #menu li:hover {
           background-color: #d8690a; }
   #nav .dropdown.closed:before {
+    content: "";
+    position: absolute;
+    right: 20px;
+    top: 21.5px;
+    width: 0;
+    height: 0;
+    transition: .2s;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
     border-top: 6px solid #fff; }
   #nav .dropdown.active:before {
+    content: "";
+    position: absolute;
+    right: 20px;
+    top: 21.5px;
+    width: 0;
+    height: 0;
+    transition: .2s;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
     border-bottom: 6px solid #fff; }
   #nav .active {
     display: block;
@@ -2458,16 +2475,6 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: space-between; }
-
-#layout {
-  padding-left: 250px; }
-  @media (max-width: 900px) {
-    #layout {
-      padding-left: 0; } }
-
-.overflow {
-  position: relative;
-  overflow: hidden; }
 
 #main.interna {
   height: 100%; }
