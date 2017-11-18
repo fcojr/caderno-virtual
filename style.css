@@ -2429,7 +2429,7 @@ ul {
 .nav-back {
   width: 100%;
   height: 100%;
-  position: absolute;
+  position: fixed;
   background-color: rgba(0, 0, 0, 0.6);
   transition: .5s;
   z-index: 1; }
@@ -2466,6 +2466,7 @@ ul {
       padding-left: 0; } }
 
 .overflow {
+  position: relative;
   overflow: hidden; }
 
 #main.interna {
